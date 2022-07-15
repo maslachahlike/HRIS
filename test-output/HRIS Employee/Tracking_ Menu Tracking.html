@@ -1,0 +1,708 @@
+<html>
+<head>
+<title>TestNG:  Tracking: Menu Tracking</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Tracking: Menu Tracking</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 14 11:59:41 ICT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>347 seconds (347301 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending spv search data negatif test", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-2098413495" onClick='toggleBox("Output-2098413495", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2098413495" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2098413495">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120237.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1f40abfa33fb5416c82d738e4f62043, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65264/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1f40abfa33fb5416c82d738e4f62043
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search ADHITYA BAYU W(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2098413495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2098413495'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1f40abfa33fb5416c82d738e4f62043, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65264/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1f40abfa33fb5416c82d738e4f62043
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search ADHITYA BAYU W(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+</pre></div></td>
+<td>30</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending spv cek fungsi filter", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-1492980244" onClick='toggleBox("Output-1492980244", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1492980244" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1492980244">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120132.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at definitions.RequestStaff.PendingSPVDefine.filter_date_by(PendingSPVDefine.java:1800)
+	at ?.Validasi filter 11-07-2022 date 11-07-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:43)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1492980244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1492980244'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at definitions.RequestStaff.PendingSPVDefine.filter_date_by(PendingSPVDefine.java:1800)
+	at ?.Validasi filter 11-07-2022 date 11-07-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:43)
+</pre></div></td>
+<td>14</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending spv cek fungsi filter", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-1635011037" onClick='toggleBox("Output-1635011037", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1635011037" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1635011037">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120148.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at definitions.RequestStaff.PendingSPVDefine.filter_date_by(PendingSPVDefine.java:1800)
+	at ?.Validasi filter 12-07-2022 date 11-06-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:43)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1635011037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1635011037'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at definitions.RequestStaff.PendingSPVDefine.filter_date_by(PendingSPVDefine.java:1800)
+	at ?.Validasi filter 12-07-2022 date 11-06-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:43)
+</pre></div></td>
+<td>16</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending spv cek fungsi filter", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-1709321711" onClick='toggleBox("Output-1709321711", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1709321711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1709321711">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120117.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at definitions.RequestStaff.PendingSPVDefine.filter_date_by(PendingSPVDefine.java:1800)
+	at ?.Validasi filter 11-07-2022 date 12-07-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:43)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1709321711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1709321711'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at definitions.RequestStaff.PendingSPVDefine.filter_date_by(PendingSPVDefine.java:1800)
+	at ?.Validasi filter 11-07-2022 date 12-07-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:43)
+</pre></div></td>
+<td>16</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending spv search data negatif test", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-2120115571" onClick='toggleBox("Output-2120115571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2120115571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2120115571">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120456.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ea27e7aee34decf26511546b3e268da, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65422}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65422/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ea27e7aee34decf26511546b3e268da
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search 50(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2120115571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2120115571'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ea27e7aee34decf26511546b3e268da, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65422}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65422/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ea27e7aee34decf26511546b3e268da
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search 50(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+</pre></div></td>
+<td>34</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff Tracking spv show data", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-533140425" onClick='toggleBox("Output-533140425", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-533140425" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-533140425">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120036.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[normalize-space()=&apos;50&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fbc523a17927e6abcdd110a58a8728c1, findElement {using=xpath, value=//td[normalize-space()=&apos;50&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65061}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65061/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbc523a17927e6abcdd110a58a8728c1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy28.getText(Unknown Source)
+	at pom.HRISPendingStaff.getShowData(HRISPendingStaff.java:370)
+	at definitions.RequestStaff.PendingSPVDefine.validasiShowData(PendingSPVDefine.java:1478)
+	at ?.User validasi show data sesuai(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:22)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace533140425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace533140425'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[normalize-space()=&apos;50&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fbc523a17927e6abcdd110a58a8728c1, findElement {using=xpath, value=//td[normalize-space()=&apos;50&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65061}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65061/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbc523a17927e6abcdd110a58a8728c1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy28.getText(Unknown Source)
+	at pom.HRISPendingStaff.getShowData(HRISPendingStaff.java:370)
+	at definitions.RequestStaff.PendingSPVDefine.validasiShowData(PendingSPVDefine.java:1478)
+	at ?.User validasi show data sesuai(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:22)
+</pre></div></td>
+<td>41</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending spv search data negatif test", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-1881183983" onClick='toggleBox("Output-1881183983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1881183983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1881183983">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120528.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [43b62e283b626963477475b141518fa5, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65455}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65455/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43b62e283b626963477475b141518fa5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search Juara Coding Tebet(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1881183983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1881183983'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [43b62e283b626963477475b141518fa5, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65455}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65455/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43b62e283b626963477475b141518fa5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search Juara Coding Tebet(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+</pre></div></td>
+<td>31</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending spv search data negatif test", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-82973602" onClick='toggleBox("Output-82973602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-82973602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-82973602">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120312.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63572e80143592ef6d7fba80a478d277, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65308/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 63572e80143592ef6d7fba80a478d277
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search Supervisor(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace82973602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace82973602'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63572e80143592ef6d7fba80a478d277, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65308}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65308/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 63572e80143592ef6d7fba80a478d277
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search Supervisor(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+</pre></div></td>
+<td>35</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending spv search data negatif test", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-1324735779" onClick='toggleBox("Output-1324735779", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1324735779" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1324735779">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120346.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e45a87484318475686ebca9d762505c, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65348/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e45a87484318475686ebca9d762505c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search 006/PM/HRD/VII/2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1324735779", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1324735779'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e45a87484318475686ebca9d762505c, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65348/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e45a87484318475686ebca9d762505c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search 006/PM/HRD/VII/2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+</pre></div></td>
+<td>33</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending spv cek fungsi filter", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-1186127045" onClick='toggleBox("Output-1186127045", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1186127045" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1186127045">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120207.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at definitions.RequestStaff.PendingSPVDefine.filter_date_by(PendingSPVDefine.java:1787)
+	at ?.Validasi filter  date (file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:43)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1186127045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1186127045'><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at definitions.RequestStaff.PendingSPVDefine.filter_date_by(PendingSPVDefine.java:1787)
+	at ?.Validasi filter  date (file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:43)
+</pre></div></td>
+<td>18</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending spv search data negatif test", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-1435836365" onClick='toggleBox("Output-1435836365", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1435836365" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1435836365">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120421.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0815a740d45793e3343669b624784853, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65382/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0815a740d45793e3343669b624784853
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search Karyawan baru(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1435836365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1435836365'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0815a740d45793e3343669b624784853, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65382/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0815a740d45793e3343669b624784853
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISTrackingStaff.getName(HRISTrackingStaff.java:279)
+	at pom.HRISTrackingStaff.searchDataTracking(HRISTrackingStaff.java:105)
+	at definitions.RequestStaff.PendingSPVDefine.cekSearchGagal(PendingSPVDefine.java:1738)
+	at ?.User menjalankan search data berdasarkan search Karyawan baru(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:57)
+</pre></div></td>
+<td>34</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tracking spv cek detail data btn eye", "Request Staff Sub Menu Tracking"<br/>
+<a href="#Output-166022233" onClick='toggleBox("Output-166022233", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-166022233" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-166022233">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_120101.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr/td[1]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00195eea270e7f338e49d661f90be027, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr/td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65104/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00195eea270e7f338e49d661f90be027
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at definitions.RequestStaff.PendingSPVDefine.cekDetailData(PendingSPVDefine.java:162)
+	at ?.User menekan button plus dan eye(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:30)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace166022233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace166022233'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr/td[1]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00195eea270e7f338e49d661f90be027, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr/td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65104/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00195eea270e7f338e49d661f90be027
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at definitions.RequestStaff.PendingSPVDefine.cekDetailData(PendingSPVDefine.java:162)
+	at ?.User menekan button plus dan eye(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISTrackingSPV.feature:30)
+</pre></div></td>
+<td>24</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.HRISTrackingSpvRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISTrackingSpvRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff Tracking spv", "Request Staff Sub Menu Tracking"</td>
+<td></td>
+<td>13</td>
+<td>runner.HRISTrackingSpvRunner@14028087</td></tr>
+</table><p>
+</body>
+</html>

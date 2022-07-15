@@ -1,0 +1,1862 @@
+<html>
+<head>
+<title>TestNG:  Manager Menu Pending</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Manager Menu Pending</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>78/51/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 14 14:22:47 ICT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>3886 seconds (3886135 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra check bulan invalid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:512)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1432815844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1432815844'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:512)
+</pre></div></td>
+<td>50</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra input bulan dan tahun valid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:394)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace699881522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace699881522'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:394)
+</pre></div></td>
+<td>41</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra check tahun", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:531)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1123978232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1123978232'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:531)
+</pre></div></td>
+<td>43</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian input bulan dan tahun valid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:377)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace688563981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace688563981'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:377)
+</pre></div></td>
+<td>32</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending MNGR search data negatif test", "Request Staff"<br/>
+<a href="#Output-1445519009" onClick='toggleBox("Output-1445519009", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1445519009" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1445519009">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142536.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b72f77d01da404d804aac650325af640, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53689/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b72f77d01da404d804aac650325af640
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_SPV(PendingSPVDefine.java:137)
+	at ?.User menjalankan search berdasarkan data di sub menu pending Supervisor(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:26)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1445519009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1445519009'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b72f77d01da404d804aac650325af640, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53689/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b72f77d01da404d804aac650325af640
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_SPV(PendingSPVDefine.java:137)
+	at ?.User menjalankan search berdasarkan data di sub menu pending Supervisor(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:26)
+</pre></div></td>
+<td>38</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data kualifikasi lainnya tidak dilakukan", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:304)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace178060822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace178060822'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:304)
+</pre></div></td>
+<td>33</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending MNGR search data negatif test", "Request Staff"<br/>
+<a href="#Output-1743307621" onClick='toggleBox("Output-1743307621", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1743307621" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1743307621">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142650.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3153e49f5b2724425ab2149601025dc, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53849}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53849/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c3153e49f5b2724425ab2149601025dc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_SPV(PendingSPVDefine.java:137)
+	at ?.User menjalankan search berdasarkan data di sub menu pending 50(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:26)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1743307621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1743307621'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3153e49f5b2724425ab2149601025dc, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53849}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53849/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c3153e49f5b2724425ab2149601025dc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_SPV(PendingSPVDefine.java:137)
+	at ?.User menjalankan search berdasarkan data di sub menu pending 50(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:26)
+</pre></div></td>
+<td>37</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian check tahun", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:474)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace494015100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace494015100'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:474)
+</pre></div></td>
+<td>31</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data Nik dengan spesial karakter dan kosong", "Request Staff"<br/>
+<a href="#Output-1176881846" onClick='toggleBox("Output-1176881846", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1176881846" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1176881846">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142844.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [NIK yang anda masukkan tidak ada di database] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.NIKInvalid_spesialKarakter_dan_kosong(PendingSPVDefine.java:241)
+	at ?.User input tujuan, spesial karakter dan kosong NIK !!..%$^!, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:62)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1176881846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1176881846'><pre>java.lang.AssertionError: expected [NIK yang anda masukkan tidak ada di database] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.NIKInvalid_spesialKarakter_dan_kosong(PendingSPVDefine.java:241)
+	at ?.User input tujuan, spesial karakter dan kosong NIK !!..%$^!, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:62)
+</pre></div></td>
+<td>31</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang check bulan invalid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:398)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1093400254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1093400254'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:398)
+</pre></div></td>
+<td>39</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra input bulan > 12, bulan > 2 digit angka", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:495)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1195340458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195340458'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:495)
+</pre></div></td>
+<td>40</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status masa percobaan input bulan > 12, bulan > 2 digit angka", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:552)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1969942386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1969942386'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:552)
+</pre></div></td>
+<td>37</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang check tahun", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:417)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1224140911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1224140911'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:417)
+</pre></div></td>
+<td>32</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek note dengan data valid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:529)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace709260636", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace709260636'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:529)
+</pre></div></td>
+<td>35</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR select golongan jabatan dilakukan", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:427)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace168616465", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace168616465'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:427)
+</pre></div></td>
+<td>38</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data checkbox asuransi dipilih", "Request Staff"<br/>
+<a href="#Output-1392618143" onClick='toggleBox("Output-1392618143", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1392618143" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1392618143">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_152107.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at definitions.RequestStaff.PendingSPVDefine.validasiData_nonMandatory(PendingSPVDefine.java:1628)
+	at ?.User validasi data input non mandatory(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:621)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1392618143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1392618143'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at definitions.RequestStaff.PendingSPVDefine.validasiData_nonMandatory(PendingSPVDefine.java:1628)
+	at ?.User validasi data input non mandatory(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:621)
+</pre></div></td>
+<td>56</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data jumlah orang dengan 0", "Request Staff"<br/>
+<a href="#Output-477631962" onClick='toggleBox("Output-477631962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-477631962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-477631962">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_143045.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [The jumlah orang field is required.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.input_form_Detail_jumlahOrang_0(PendingSPVDefine.java:299)
+	at ?.User input tujuan, NIK D6180209, posisi, input jumlah orang dengan angka 0 0, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:96)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace477631962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace477631962'><pre>java.lang.AssertionError: expected [The jumlah orang field is required.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.input_form_Detail_jumlahOrang_0(PendingSPVDefine.java:299)
+	at ?.User input tujuan, NIK D6180209, posisi, input jumlah orang dengan angka 0 0, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:96)
+</pre></div></td>
+<td>38</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR cek fungsi filter", "Request Staff"<br/>
+<a href="#Output-2049567116" onClick='toggleBox("Output-2049567116", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2049567116" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2049567116">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142458.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at definitions.RequestStaff.PendingSPVDefine.cekFilterDate(PendingSPVDefine.java:1807)
+	at ?.User validasi fitur filter  date (file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2049567116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2049567116'><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at definitions.RequestStaff.PendingSPVDefine.cekFilterDate(PendingSPVDefine.java:1807)
+	at ?.User validasi fitur filter  date (file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:12)
+</pre></div></td>
+<td>30</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data kota lokasi krja tidak dipilih", "Request Staff"<br/>
+<a href="#Output-1211359637" onClick='toggleBox("Output-1211359637", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1211359637" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1211359637">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_144047.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0dd3b05eccad2af5654f11c1be9d5568, clickElement {id=1440b991-5fcb-41bf-894b-2437ccf789b8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54805/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0dd3b05eccad2af5654f11c1be9d5568)] -&gt; xpath: //button[normalize-space()=&apos;Kirim&apos;]]
+Session ID: 0dd3b05eccad2af5654f11c1be9d5568
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:119)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.click(Unknown Source)
+	at definitions.RequestStaff.PendingSPVDefine.user_klik_tombol_kirim(PendingSPVDefine.java:1439)
+	at ?.User klik tombol kirim(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:166)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:119)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.click(Unknown Source)
+	at definitions.RequestStaff.PendingSPVDefine.user_klik_tombol_kirim(PendingSPVDefine.java:1439)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1211359637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1211359637'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0dd3b05eccad2af5654f11c1be9d5568, clickElement {id=1440b991-5fcb-41bf-894b-2437ccf789b8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54805/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0dd3b05eccad2af5654f11c1be9d5568)] -&gt; xpath: //button[normalize-space()=&apos;Kirim&apos;]]
+Session ID: 0dd3b05eccad2af5654f11c1be9d5568
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:119)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.click(Unknown Source)
+	at definitions.RequestStaff.PendingSPVDefine.user_klik_tombol_kirim(PendingSPVDefine.java:1439)
+	at ?.User klik tombol kirim(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:166)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:119)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.click(Unknown Source)
+	at definitions.RequestStaff.PendingSPVDefine.user_klik_tombol_kirim(PendingSPVDefine.java:1439)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>344</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR cek fungsi filter", "Request Staff"<br/>
+<a href="#Output-238867348" onClick='toggleBox("Output-238867348", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-238867348" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-238867348">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142324.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at definitions.RequestStaff.PendingSPVDefine.cekFilterDate(PendingSPVDefine.java:1820)
+	at ?.User validasi fitur filter 09-07-2022 date 11-07-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:12)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace238867348", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace238867348'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at definitions.RequestStaff.PendingSPVDefine.cekFilterDate(PendingSPVDefine.java:1820)
+	at ?.User validasi fitur filter 09-07-2022 date 11-07-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:12)
+</pre></div></td>
+<td>37</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian check tahun", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:474)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1316792663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1316792663'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:474)
+</pre></div></td>
+<td>37</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra input bulan dan tahun valid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:394)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658909004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658909004'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:394)
+</pre></div></td>
+<td>42</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR select golongan jabatan dilakukan", "Request Staff"<br/>
+<a href="#Output-2091288971" onClick='toggleBox("Output-2091288971", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2091288971" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2091288971">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_150011.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:548)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2091288971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2091288971'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:548)
+</pre></div></td>
+<td>41</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang check bulan invalid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:398)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace619093067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace619093067'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:398)
+</pre></div></td>
+<td>47</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select status perkawinan tidak dilakukan", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:287)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1243574959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1243574959'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:287)
+</pre></div></td>
+<td>32</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang input bulan > 12, bulan > 2 digit angka", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:381)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1857165827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1857165827'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:381)
+</pre></div></td>
+<td>36</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR cek fungsi filter", "Request Staff"<br/>
+<a href="#Output-263128731" onClick='toggleBox("Output-263128731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-263128731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-263128731">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142355.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at definitions.RequestStaff.PendingSPVDefine.cekFilterDate(PendingSPVDefine.java:1820)
+	at ?.User validasi fitur filter 09-07-2022 date 09-07-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:12)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace263128731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace263128731'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at definitions.RequestStaff.PendingSPVDefine.cekFilterDate(PendingSPVDefine.java:1820)
+	at ?.User validasi fitur filter 09-07-2022 date 09-07-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:12)
+</pre></div></td>
+<td>30</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status masa percobaan input bulan > 12, bulan > 2 digit angka", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:552)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1369938578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1369938578'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:552)
+</pre></div></td>
+<td>44</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR cek fungsi filter", "Request Staff"<br/>
+<a href="#Output-860910699" onClick='toggleBox("Output-860910699", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-860910699" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-860910699">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142427.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at definitions.RequestStaff.PendingSPVDefine.cekFilterDate(PendingSPVDefine.java:1820)
+	at ?.User validasi fitur filter 11-07-2022 date 09-06-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:12)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace860910699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace860910699'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at definitions.RequestStaff.PendingSPVDefine.cekFilterDate(PendingSPVDefine.java:1820)
+	at ?.User validasi fitur filter 11-07-2022 date 09-06-2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:12)
+</pre></div></td>
+<td>31</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang input bulan > 12, bulan > 2 digit angka", "Request Staff"<br/>
+<a href="#Output-694146660" onClick='toggleBox("Output-694146660", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-694146660" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-694146660">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_145812.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [input tidak boleh melebihi 12 dan 2 digit angka] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.StatusKaryawanMaganginputBulan(PendingSPVDefine.java:864)
+	at ?.User melengkapi status karyawan, pilih karyawan Magang, input bulan &gt; 12, bulan &gt; 2 digit angka 134, tahun 1, masa percobaan 4, golongan, gaji 1000, asuransi, tunjangan jabatan 500, tunjangan transportasi 300, tunjangan komunikasi 200, note satu dua(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:383)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace694146660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace694146660'><pre>java.lang.AssertionError: expected [input tidak boleh melebihi 12 dan 2 digit angka] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.StatusKaryawanMaganginputBulan(PendingSPVDefine.java:864)
+	at ?.User melengkapi status karyawan, pilih karyawan Magang, input bulan &gt; 12, bulan &gt; 2 digit angka 134, tahun 1, masa percobaan 4, golongan, gaji 1000, asuransi, tunjangan jabatan 500, tunjangan transportasi 300, tunjangan komunikasi 200, note satu dua(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:383)
+</pre></div></td>
+<td>54</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data start umur > batas umur", "Request Staff"<br/>
+<a href="#Output-107175519" onClick='toggleBox("Output-107175519", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-107175519" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-107175519">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_144659.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [Umur awal tidak boleh lebih besar dari batas umur.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.inputBatasUmurLebihKecil(PendingSPVDefine.java:563)
+	at ?.User melakukan tambah field kualifikasi jenis kelamin, umur awal 26 lebih besar dibanding batas umur 20, pendidikan, status perkawinan, kualifikasi lainnya skill(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:255)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace107175519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace107175519'><pre>java.lang.AssertionError: expected [Umur awal tidak boleh lebih besar dari batas umur.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.inputBatasUmurLebihKecil(PendingSPVDefine.java:563)
+	at ?.User melakukan tambah field kualifikasi jenis kelamin, umur awal 26 lebih besar dibanding batas umur 20, pendidikan, status perkawinan, kualifikasi lainnya skill(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:255)
+</pre></div></td>
+<td>47</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data lokasi kerja valid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:153)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2099335711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2099335711'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:153)
+</pre></div></td>
+<td>34</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data checkbox asuransi dipilih", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:461)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace425863901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace425863901'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:461)
+</pre></div></td>
+<td>35</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra check bulan invalid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:512)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace179881467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace179881467'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:512)
+</pre></div></td>
+<td>43</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra input bulan > 12, bulan > 2 digit angka", "Request Staff"<br/>
+<a href="#Output-1777232555" onClick='toggleBox("Output-1777232555", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1777232555" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1777232555">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_150948.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:495)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1777232555", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1777232555'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:495)
+</pre></div></td>
+<td>57</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT input bulan > 12, bulan > 2 digit angka", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:324)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1277996773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1277996773'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:324)
+</pre></div></td>
+<td>33</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra check tahun", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:531)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1315968442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1315968442'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:531)
+</pre></div></td>
+<td>39</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek gaji dengan data valid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:444)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace489043053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace489043053'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:444)
+</pre></div></td>
+<td>41</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian check tahun", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:474)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1481751711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1481751711'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:474)
+</pre></div></td>
+<td>38</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT check bulan invalid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:341)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace430955903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace430955903'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:341)
+</pre></div></td>
+<td>36</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending MNGR search data negatif test", "Request Staff"<br/>
+<a href="#Output-116463908" onClick='toggleBox("Output-116463908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-116463908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-116463908">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142613.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d949fbbd260ccf80c52e1dd406e84bb, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53771/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d949fbbd260ccf80c52e1dd406e84bb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_SPV(PendingSPVDefine.java:137)
+	at ?.User menjalankan search berdasarkan data di sub menu pending 006/PM/HRD/VII/2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:26)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116463908", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace116463908'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d949fbbd260ccf80c52e1dd406e84bb, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53771/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d949fbbd260ccf80c52e1dd406e84bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_SPV(PendingSPVDefine.java:137)
+	at ?.User menjalankan search berdasarkan data di sub menu pending 006/PM/HRD/VII/2022(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:26)
+</pre></div></td>
+<td>36</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending MNGR search data positif test", "Request Staff"<br/>
+<a href="#Output-920599690" onClick='toggleBox("Output-920599690", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-920599690" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-920599690">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142358.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c459046144d8dce6d32ed673a2339729, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53473}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53473/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c459046144d8dce6d32ed673a2339729
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_positif_test(PendingSPVDefine.java:129)
+	at ?.User melakukan search data berdasarkan search EX - ADHITYA BAYU W(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:18)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace920599690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920599690'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c459046144d8dce6d32ed673a2339729, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53473}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53473/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c459046144d8dce6d32ed673a2339729
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_positif_test(PendingSPVDefine.java:129)
+	at ?.User melakukan search data berdasarkan search EX - ADHITYA BAYU W(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:18)
+</pre></div></td>
+<td>40</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra check tahun", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:531)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1848051709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1848051709'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:531)
+</pre></div></td>
+<td>44</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select status perkawinan dilakukan", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:276)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1164565173", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1164565173'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGR.feature:276)
+</pre></div></td>
+<td>26</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending MNGR search data negatif test", "Request Staff"<br/>
+<a href="#Output-1413744167" onClick='toggleBox("Output-1413744167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1413744167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1413744167">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142724.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5b37bff2f385be7a44ad794f8aca3f5a, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53921/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b37bff2f385be7a44ad794f8aca3f5a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_SPV(PendingSPVDefine.java:137)
+	at ?.User menjalankan search berdasarkan data di sub menu pending Juara Coding Tebet(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:26)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1413744167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1413744167'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-KMN6TAK&apos;, ip: &apos;10.0.0.210&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5b37bff2f385be7a44ad794f8aca3f5a, findElement {using=xpath, value=//*[@id=&quot;dataTable&quot;]/tbody/tr[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53921/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b37bff2f385be7a44ad794f8aca3f5a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pom.HRISPendingStaff.getName(HRISPendingStaff.java:670)
+	at pom.HRISPendingStaff.searchData(HRISPendingStaff.java:237)
+	at definitions.RequestStaff.PendingSPVDefine.search_data_SPV(PendingSPVDefine.java:137)
+	at ?.User menjalankan search berdasarkan data di sub menu pending Juara Coding Tebet(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:26)
+</pre></div></td>
+<td>33</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian input bulan > 12, bulan > 2 digit angka", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:438)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace949740536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace949740536'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:438)
+</pre></div></td>
+<td>27</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR select golongan jabatan tidak dilakukan", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:584)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1601519766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1601519766'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:584)
+</pre></div></td>
+<td>40</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT input bulan > 12, bulan > 2 digit angka", "Request Staff"<br/>
+<a href="#Output-321925847" onClick='toggleBox("Output-321925847", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-321925847" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-321925847">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_145045.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [input tidak boleh melebihi 12 dan 2 digit angka] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.StatusKaryawanPKWTinputBulan(PendingSPVDefine.java:767)
+	at ?.User melengkapi status karyawan, memilih status karyawan PKWT, input bulan &gt; 12, bulan &gt; 2 digit angka 134, tahun 1, masa percobaan 4, golongan, gaji 1000, asuransi, tunjangan jabatan 500, tunjangan transportasi 300, tunjangan komunikasi 200, note satu dua(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:326)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace321925847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace321925847'><pre>java.lang.AssertionError: expected [input tidak boleh melebihi 12 dan 2 digit angka] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.StatusKaryawanPKWTinputBulan(PendingSPVDefine.java:767)
+	at ?.User melengkapi status karyawan, memilih status karyawan PKWT, input bulan &gt; 12, bulan &gt; 2 digit angka 134, tahun 1, masa percobaan 4, golongan, gaji 1000, asuransi, tunjangan jabatan 500, tunjangan transportasi 300, tunjangan komunikasi 200, note satu dua(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:326)
+</pre></div></td>
+<td>62</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Mitra check bulan invalid", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:512)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1314515888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1314515888'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:512)
+</pre></div></td>
+<td>50</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data Nik dengan spesial karakter dan kosong", "Request Staff"<br/>
+<a href="#Output-1394953929" onClick='toggleBox("Output-1394953929", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1394953929" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1394953929">
+<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220714_142918.PNG'height="350" width="792"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [NIK yang anda masukkan tidak ada di database] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.NIKInvalid_spesialKarakter_dan_kosong(PendingSPVDefine.java:241)
+	at ?.User input tujuan, spesial karakter dan kosong NIK , posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:62)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1394953929", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1394953929'><pre>java.lang.AssertionError: expected [NIK yang anda masukkan tidak ada di database] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.NIKInvalid_spesialKarakter_dan_kosong(PendingSPVDefine.java:241)
+	at ?.User input tujuan, spesial karakter dan kosong NIK , posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:62)
+</pre></div></td>
+<td>33</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian input bulan > 12, bulan > 2 digit angka", "Request Staff"</td>
+<td><div><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:438)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1727484815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1727484815'><pre>java.lang.AssertionError: expected [Karyawan ini sudah pernah diganti. Mohon ajukan karyawan yang lain.] but found [Alert is Not Displayed]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at definitions.RequestStaff.PendingSPVDefine.Nikterdaftar(PendingSPVDefine.java:217)
+	at ?.User input tujuan, NIK D6180209, posisi, jumlah orang 1, mulai kerja, lokasi kerja, kota kerja, input detail lokasi Jl. Satu Dua, deskripsi pekerjaan test(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingMNGRNegatifTest.feature:438)
+</pre></div></td>
+<td>29</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending MNGR", "Request Staff"</td>
+<td></td>
+<td>30</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data Nik Data yang terdaftar", "Request Staff"</td>
+<td></td>
+<td>48</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan komunikasi dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>34</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending MNGR search data positif test", "Request Staff"</td>
+<td></td>
+<td>32</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data deskripsi pekerjaan dengan huruf angka dan spesial karakter", "Request Staff"</td>
+<td></td>
+<td>46</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan transportasi dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>34</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan jabatan dengan data valid", "Request Staff"</td>
+<td></td>
+<td>68</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang check tahun", "Request Staff"</td>
+<td></td>
+<td>48</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Request Staff pending MNGR show data", "Request Staff"</td>
+<td></td>
+<td>30</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek field gaji", "Request Staff"</td>
+<td></td>
+<td>34</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data check masa percobaan bulan invalid", "Request Staff"</td>
+<td></td>
+<td>47</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data deskripsi pekerjaan dengan huruf angka dan spesial karakter", "Request Staff"</td>
+<td></td>
+<td>56</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT check bulan invalid", "Request Staff"</td>
+<td></td>
+<td>66</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang input bulan dan tahun valid", "Request Staff"</td>
+<td></td>
+<td>62</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR cek detail data btn eye", "Request Staff"</td>
+<td></td>
+<td>48</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select jenis kelamin dilakukan", "Request Staff"</td>
+<td></td>
+<td>45</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian check bulan invalid", "Request Staff"</td>
+<td></td>
+<td>48</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data mulai kerja input manual", "Request Staff"</td>
+<td></td>
+<td>49</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek field gaji", "Request Staff"</td>
+<td></td>
+<td>37</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data detail lokasi kerja dengan huruf angka dan spesial karakter", "Request Staff"</td>
+<td></td>
+<td>51</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT check tahun", "Request Staff"</td>
+<td></td>
+<td>62</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian check bulan invalid", "Request Staff"</td>
+<td></td>
+<td>49</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data umur tidak dilakukan", "Request Staff"</td>
+<td></td>
+<td>54</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT check bulan", "Request Staff"</td>
+<td></td>
+<td>56</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan transportasi dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>30</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data deskripsi pekerjaan kosong", "Request Staff"</td>
+<td></td>
+<td>53</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data mulai kerja datepicker", "Request Staff"</td>
+<td></td>
+<td>58</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select pendidikan tidak dilakukan", "Request Staff"</td>
+<td></td>
+<td>59</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select pendidikan dilakukan", "Request Staff"</td>
+<td></td>
+<td>42</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT", "Request Staff"</td>
+<td></td>
+<td>59</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data masa percobaan dengan angka", "Request Staff"</td>
+<td></td>
+<td>61</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data umur tidak dilakukan", "Request Staff"</td>
+<td></td>
+<td>52</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek note dengan data valid", "Request Staff"</td>
+<td></td>
+<td>66</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan transportasi dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>34</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data Nik", "Request Staff"</td>
+<td></td>
+<td>48</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT check tahun", "Request Staff"</td>
+<td></td>
+<td>63</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian check bulan invalid", "Request Staff"</td>
+<td></td>
+<td>48</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang Harian input bulan dan tahun valid", "Request Staff"</td>
+<td></td>
+<td>65</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data lokasi kerja pilih dika 1 lt 2", "Request Staff"</td>
+<td></td>
+<td>53</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data detail lokasi kerja kosong", "Request Staff"</td>
+<td></td>
+<td>53</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang check bulan invalid", "Request Staff"</td>
+<td></td>
+<td>69</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data mulai kerja input manual", "Request Staff"</td>
+<td></td>
+<td>46</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek note dengan data valid", "Request Staff"</td>
+<td></td>
+<td>62</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan jabatan dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>32</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data jumlah orang valid", "Request Staff"</td>
+<td></td>
+<td>51</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select status perkawinan dilakukan", "Request Staff"</td>
+<td></td>
+<td>43</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data Nik Data yang terdaftar", "Request Staff"</td>
+<td></td>
+<td>55</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select tujuan tidak dilakukan", "Request Staff"</td>
+<td></td>
+<td>49</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data jumlah orang dengan huruf", "Request Staff"</td>
+<td></td>
+<td>55</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select jenis kelamin tidak dilakukan", "Request Staff"</td>
+<td></td>
+<td>57</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan komunikasi dengan data valid", "Request Staff"</td>
+<td></td>
+<td>60</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan jabatan dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>32</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan komunikasi dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>32</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data lokasi kerja tidak dipilih", "Request Staff"</td>
+<td></td>
+<td>50</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data umur tidak dilakukan", "Request Staff"</td>
+<td></td>
+<td>56</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select status perkawinan dilakukan", "Request Staff"</td>
+<td></td>
+<td>53</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan jabatan dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>33</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan transportasi dengan data valid", "Request Staff"</td>
+<td></td>
+<td>58</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan permanen", "Request Staff"</td>
+<td></td>
+<td>56</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data detail lokasi kerja dengan huruf angka dan spesial karakter", "Request Staff"</td>
+<td></td>
+<td>52</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT check tahun", "Request Staff"</td>
+<td></td>
+<td>54</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select status perkawinan dilakukan", "Request Staff"</td>
+<td></td>
+<td>49</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek tunjangan komunikasi dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>33</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data jumlah orang dengan huruf", "Request Staff"</td>
+<td></td>
+<td>51</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data check masa percobaan bulan invalid", "Request Staff"</td>
+<td></td>
+<td>39</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data detail lokasi kerja dengan huruf angka dan spesial karakter", "Request Staff"</td>
+<td></td>
+<td>50</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data deskripsi pekerjaan dengan huruf angka dan spesial karakter", "Request Staff"</td>
+<td></td>
+<td>49</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data check masa percobaan bulan invalid", "Request Staff"</td>
+<td></td>
+<td>34</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT check bulan invalid", "Request Staff"</td>
+<td></td>
+<td>73</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR select golongan jabatan tidak dilakukan", "Request Staff"</td>
+<td></td>
+<td>53</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan PKWT check tahun", "Request Staff"</td>
+<td></td>
+<td>57</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek field gaji", "Request Staff"</td>
+<td></td>
+<td>36</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data cek note dengan data invalid", "Request Staff"</td>
+<td></td>
+<td>33</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang check tahun", "Request Staff"</td>
+<td></td>
+<td>47</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data select tidak dilakukan", "Request Staff"</td>
+<td></td>
+<td>49</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data memilih status karyawan Magang input bulan dan tahun valid", "Request Staff"</td>
+<td></td>
+<td>55</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrNegatifRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrNegatifRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data jumlah orang dengan huruf", "Request Staff"</td>
+<td></td>
+<td>51</td>
+<td>runner.HRISPendingMngrNegatifRunner@f1da57d</td></tr>
+<tr>
+<td title='runner.HRISPendingMngrRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HRISPendingMngrRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Pending MNGR input data umur dengan data valid", "Request Staff"</td>
+<td></td>
+<td>46</td>
+<td>runner.HRISPendingMngrRunner@480d3575</td></tr>
+</table><p>
+</body>
+</html>

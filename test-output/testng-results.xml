@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220715_090905.PNG'height="350" width="792"/>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-07-15T09:08:24 ICT" name="Default suite" finished-at="2022-07-15T09:09:05 ICT" duration-ms="41068">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HRISPendingSpvNegatifRunner@451001e5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-07-15T09:08:24 ICT" name="Default test" finished-at="2022-07-15T09:09:05 ICT" duration-ms="41068">
+      <class name="runner.HRISPendingSpvNegatifRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.HRISPendingSpvNegatifRunner@451001e5]" started-at="2022-07-15T09:08:24 ICT" name="setUpClass" finished-at="2022-07-15T09:08:25 ICT" duration-ms="608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60cb1ed6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HRISPendingSpvNegatifRunner@451001e5]" started-at="2022-07-15T09:08:25 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-15T09:09:05 ICT" duration-ms="40352" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Pending spv input data memilih status karyawan PKWT input bulan > 12, bulan > 2 digit angka"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Request Staff"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at definitions.RequestStaff.PendingSPVDefine.validasi_bulanPKWT(PendingSPVDefine.java:1493)
+at ✽.User validasi bulan PKWT(file:///D:/2022/eclipse-workspace/hris-employee/src/test/resources/features/HRISPendingSPVNegatifTest.feature:348)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<img src='file://D:\2022\eclipse-workspace\hris-employee\src\test\resources\SS\20220715_090905.PNG'height="350" width="792"/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.HRISPendingSpvNegatifRunner@451001e5]" started-at="2022-07-15T09:09:05 ICT" name="tearDownClass" finished-at="2022-07-15T09:09:05 ICT" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.HRISPendingSpvNegatifRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

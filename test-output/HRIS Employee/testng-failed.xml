@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HRIS Employee]">
+  <test thread-count="5" name="SPV: Menu Pending(failed)">
+    <classes>
+      <class name="runner.HRISPendingSpvRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="19 5 22 26 27 43 30"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runner.HRISPendingSpvRunner -->
+    </classes>
+  </test> <!-- SPV: Menu Pending(failed) -->
+</suite> <!-- Failed suite [HRIS Employee] -->
